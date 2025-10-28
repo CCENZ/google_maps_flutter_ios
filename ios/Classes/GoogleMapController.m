@@ -155,7 +155,7 @@
   if (self = [super init]) {
     _mapView = mapView;
 
-    _mapView.accessibilityElementsHidden = NO;
+    _mapView.accessibilityElementsHidden = YES;
     // TODO(cyanglaz): avoid sending message to self in the middle of the init method.
     // https://github.com/flutter/flutter/issues/104121
     [self interpretMapConfiguration:creationParameters.mapConfiguration];
