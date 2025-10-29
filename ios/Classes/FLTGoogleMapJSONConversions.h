@@ -1,4 +1,4 @@
-// Copyright 2013 The Flutter Authors
+// Copyright 2013 The Flutter Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -57,12 +57,6 @@ extern GMSMapViewType FGMGetMapViewTypeForPigeonMapType(FGMPlatformMapType type)
 /// Converts a GMUStaticCluster to its Pigeon representation.
 extern FGMPlatformCluster *FGMGetPigeonCluster(GMUStaticCluster *cluster,
                                                NSString *clusterManagerIdentifier);
-
-/// Converts a GMSGroundOverlay to its Pigeon representation.
-extern FGMPlatformGroundOverlay *FGMGetPigeonGroundOverlay(GMSGroundOverlay *groundOverlay,
-                                                           NSString *overlayId,
-                                                           BOOL isCreatedWithBounds,
-                                                           NSNumber *_Nullable zoomLevel);
 
 /// Creates a GMSCameraUpdate from its Pigeon equivalent.
 extern GMSCameraUpdate *_Nullable FGMGetCameraUpdateForPigeonCameraUpdate(
